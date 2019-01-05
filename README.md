@@ -1,11 +1,12 @@
 # Fireworks for Koken
-Fireworks is a simple javascript and CSS plugin for the @koken cms
+Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koken.me)
 ![Fireworks preview](Fireworks/preview.jpg)
 ## Installation
 
 1. Upload the "Fireworks" folder to the `/storage/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in Koken
 3. Customize the greating message to your liking
+![Fireworks settings](screens/settings.png)
 4. And Done
 
 ### Credits

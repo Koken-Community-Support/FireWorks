@@ -1,5 +1,6 @@
 # Misc files
 *.zip
+*.bu
 
 # Windows image file caches
 Thumbs.db

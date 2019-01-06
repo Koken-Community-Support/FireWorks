@@ -4,7 +4,7 @@ Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koke
 ## Features
 * Colorful holidays firekworks
 * Customizable greating message
-* Custom Xmas:ish fonts
+* Custom Xmas:ish [fontface](#christmas-fontface-character-map)
 * Fluid and responsive font sizes
 * Only displayed once per visit/browser session
 
@@ -16,8 +16,11 @@ Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koke
 ![Fireworks settings](screens/settings.png)
 4. And Done
 
+### Christmas Fontface Character Map
+![Character Map](screens/character-map-merry-christmas.png)
+
 ### Credits
 
 * The original JS and inspiration comes from: [Fireworks - Happy 2019!](https://codepen.io/TC5550/pen/NejPqE) [by: Alfons Nilsson](https://aaserver.net) @TheCoder5550
-* Christmas font [Måns Grebäck](http://www.aringtypeface.com/)
+* Christmas fontface [Måns Grebäck](http://www.aringtypeface.com/)
 * preview image comes from: [Epic Fireworks](https://www.flickr.com/photos/epicfireworks/8058678846) and is used under [CC licensing](https://creativecommons.org/licenses/by/2.0/).

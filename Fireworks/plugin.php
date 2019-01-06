@@ -30,13 +30,13 @@ class BaldursPhotographyFireworks extends KokenPlugin {
 			if ($this->data->titlePlacement == 'first') {
 				echo '<h2>'. $siteTitle .' '. $greatingOne .'</h2>';
 				if ( !empty($greatingTwo) ) {
-					echo '<h3>'. $greatingTwo .'</h3>';
+					echo '<h3>7'. $greatingTwo .'7</h3>';
 				}
 			}
 			if ($this->data->titlePlacement == 'last') {
 				if ( !empty($greatingTwo) ) {
 					echo '<h2>'. $greatingOne .'</h2>';
-					echo '<h3>'. $greatingTwo .' '. $siteTitle .'</h3>';
+					echo '<h3>7'. $greatingTwo .' '. $siteTitle .'7</h3>';
 				} else {
 					echo '<h2>'. $greatingOne .' '. $siteTitle .'</h2>';
 				}
@@ -44,7 +44,7 @@ class BaldursPhotographyFireworks extends KokenPlugin {
 			if ($this->data->titlePlacement == 'hide') {
 				echo '<h2>'. $greatingOne .'</h2>';
 				if ( !empty($greatingTwo) ) {
-					echo '<h3>'. $greatingTwo .'</h3>';
+					echo '<h3>7'. $greatingTwo .'7</h3>';
 				}
 			}
 			echo '</span><span id="year">'. $curYear .'</span></div>';

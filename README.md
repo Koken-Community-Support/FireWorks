@@ -1,6 +1,13 @@
 # Fireworks for Koken
 Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koken.me)
 ![Fireworks preview](Fireworks/preview.jpg)
+## Features
+* Colorful holidays firekworks
+* Customizable greating message
+* Custom Xmas:ish fonts
+* Fluid and responsive font sizes
+* Only displayed once per visit/browser session
+
 ## Installation
 
 1. Upload the "Fireworks" folder to the `/storage/plugins/` directory

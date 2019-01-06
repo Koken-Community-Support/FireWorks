@@ -72,7 +72,6 @@ canvas#fireworks {
 }
 .fw-text > #greating * {
 	font-family: 'Merry Christmas Flake', Helvetica, Arial, sans-serif;
-	font-size: var(--fw-size-greating);
 	font-weight: 800;
 	color: var(--fw-color-greating);
 	text-align: center;

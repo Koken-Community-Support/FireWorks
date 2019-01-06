@@ -45,6 +45,16 @@
 			"type": "boolean",
 			"value": false
 		},
+		"greatingFont": {
+			"label": "Greating Font",
+			"info": "",
+			"type": "select",
+			"options": [
+				{ "value": "Merry Christmas Star", "label": "Merry Christmas Star" },
+				{ "value": "Merry Christmas Flake", "label": "Merry Christmas Flake" }
+			],
+			"value": "Merry Christmas Star"
+		},
 		"greatingSize": {
 			"label": "Greating Size",
 			"type": "slider",

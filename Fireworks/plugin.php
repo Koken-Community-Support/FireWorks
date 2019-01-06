@@ -25,7 +25,7 @@ class BaldursPhotographyFireworks extends KokenPlugin {
 		$curYear		= date('Y');
 		$siteTitle		= Koken::$site['title'];
 		if (!$data['lightbox']) {
-			echo '<style id="fw_css_settings" type="text/css">:root {--fw-size-greating:'. $this->data->greatingSize .'vh;--fw-size-year:'. $this->data->yearSize .'vh;--fw-color-greating:'. $this->data->greatingColor .';--fw-color-year:'. $this->data->yearColor .'}</style>';
+			echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $this->data->greatingFont .'\';--fw-size-greating:'. $this->data->greatingSize .'vmin;--fw-size-year:'. $this->data->yearSize .'vmin;--fw-color-greating:'. $this->data->greatingColor .';--fw-color-year:'. $this->data->yearColor .'}</style>';
 			echo '<div id="fw_center" class="fw-text"><span id="greating">';
 			if ($this->data->titlePlacement == 'first') {
 				echo '<h2>'. $siteTitle .' '. $greatingOne .'</h2>';

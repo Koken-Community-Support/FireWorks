@@ -1,8 +1,8 @@
 /* minifyOnSave, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
 /*! GameCanvas gc.js
  *	@copyright	(c) 2018 Alfons Nilsson - https://aaserver.net
- *	@author: Alfons Nilsson
  *	@license MIT
+ *	@author: Alfons Nilsson github.com/TheCoder5550
  *	@version 3.0
  *	@description gc.js or gameCanvas.js is a lightweight javascript library. The library is built on the Canvas API and makes it a lot easier to create and draw to the HTML Canvas.
  *	@documentation https://aaserver.net/libraries/gameCanvas/documentation.html

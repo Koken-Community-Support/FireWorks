@@ -78,6 +78,12 @@ canvas#fireworks {
 	text-shadow: 0.0625em 0.0625em 0.0625em var(--fw-color-greating);
 	margin: auto;
 }
+.fw-text > #greating h2 {
+	font-size: calc(0.5rem + var(--fw-size-greating));
+}
+.fw-text > #greating h3 {
+	font-size: calc(var(--fw-size-greating) - 0.5rem);
+}
 .fw-text > #year {
 	font-family: 'Old Standard TT', serif;
 	font-size: var(--fw-size-year);

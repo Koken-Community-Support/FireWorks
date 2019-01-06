@@ -1,4 +1,4 @@
-/*minifyOnSave, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
+/*minifyOnSave, minifier: clean-css, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
 /*:root {
 	--fw-size-greating: 10vh;
 	--fw-size-year: 30vh;

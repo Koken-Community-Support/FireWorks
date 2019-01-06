@@ -28,7 +28,7 @@
 			"label": "Greating Line One",
 			"info": "",
 			"type": "string",
-			"value": "Merry christmas &",
+			"value": "7Merry0Christmas7<br>&",
 			"validation": {
 				"type": "not_empty",
 				"error_message": "You need to provide a message to your visitors. I.e Merry christmas & a happy new year"

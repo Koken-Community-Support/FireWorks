@@ -15,7 +15,6 @@
 	"data": {
 		"titlePlacement": {
 			"label": "Site title",
-			"info": "",
 			"type": "select",
 			"options": [
 				{ "value": "first", "label": "Before greating" },
@@ -26,7 +25,6 @@
 		},
 		"greatingOne": {
 			"label": "Greating Line One",
-			"info": "",
 			"type": "string",
 			"value": "7Merry0Christmas7<br>&",
 			"validation": {
@@ -36,7 +34,7 @@
 		},
 		"greatingTwo": {
 			"label": "Greating Line Two",
-			"info": "",
+			"info": "Leave this empty if you dont need it",
 			"type": "string",
 			"value": "A happy new year from"
 		},
@@ -47,7 +45,7 @@
 		},
 		"greatingFont": {
 			"label": "Greating Font",
-			"info": "",
+			"info": "For a complete character map, please see the docs",
 			"type": "select",
 			"options": [
 				{ "value": "Merry Christmas Star", "label": "Merry Christmas Star" },

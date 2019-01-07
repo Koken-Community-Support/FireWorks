@@ -17,24 +17,31 @@ class KokenCommunityFireworks extends KokenPlugin {
 	}
 
 	function renderMarkUp($data) {
+		$titlePlacement	= $this->data->titlePlacement;
 		$greatingOne	= $this->data->greatingOne;
 		$greatingTwo	= $this->data->greatingTwo;
+		$greatingFont	= $this->data->greatingFont;
+		$greatingSize	= $this->data->greatingSize;
+		$yearSize		= $this->data->yearSize;
+		$greatingColor	= $this->data->greatingColor;
+		$yearColor		= $this->data->yearColor;
 		$canvasBkgrd	= $this->data->canvasBkgrd;
 		$fadeOutTimer	= $this->data->fadeOutTimer;
 		$fadeTime		= $this->data->fadeTime;
 		$burstTime		= $this->data->burstTime;
 		$curYear		= date('Y');
 		$siteTitle		= Koken::$site['title'];
+
 		if (!$data['lightbox']) {
-			echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $this->data->greatingFont .'\';--fw-size-greating:'. $this->data->greatingSize .'vmin;--fw-size-year:'. $this->data->yearSize .'vmin;--fw-color-greating:'. $this->data->greatingColor .';--fw-color-year:'. $this->data->yearColor .'}</style>';
+			echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $greatingFont .'\';--fw-size-greating:'. $greatingSize .'vmin;--fw-size-year:'. $yearSize .'vmin;--fw-color-greating:'. $greatingColor .';--fw-color-year:'. $yearColor .'}</style>';
 			echo '<div id="fw_center" class="fw-text"><span id="greating">';
-			if ($this->data->titlePlacement == 'first') {
+			if ($titlePlacement == 'first') {
 				echo '<h2>'. $siteTitle .' '. $greatingOne .'</h2>';
 				if ( !empty($greatingTwo) ) {
 					echo '<h3>7'. $greatingTwo .'7</h3>';
 				}
 			}
-			if ($this->data->titlePlacement == 'last') {
+			if ($titlePlacement == 'last') {
 				if ( !empty($greatingTwo) ) {
 					echo '<h2>'. $greatingOne .'</h2>';
 					echo '<h3>7'. $greatingTwo .' '. $siteTitle .'7</h3>';
@@ -42,7 +49,7 @@ class KokenCommunityFireworks extends KokenPlugin {
 					echo '<h2>'. $greatingOne .' '. $siteTitle .'</h2>';
 				}
 			}
-			if ($this->data->titlePlacement == 'hide') {
+			if ($titlePlacement == 'hide') {
 				echo '<h2>'. $greatingOne .'</h2>';
 				if ( !empty($greatingTwo) ) {
 					echo '<h3>7'. $greatingTwo .'7</h3>';

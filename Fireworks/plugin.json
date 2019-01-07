@@ -51,7 +51,13 @@
 				{ "value": "Merry Christmas Star", "label": "Merry Christmas Star" },
 				{ "value": "Merry Christmas Flake", "label": "Merry Christmas Flake" }
 			],
-			"value": "Merry Christmas Star"
+			"value": "Merry Christmas Star",
+			"dependencies": {
+				"evaluate": "all",
+				"conditions": [
+					{ "option": "textSettings", "equals": true }
+				]
+			}
 		},
 		"greatingSize": {
 			"label": "Greating Size",

@@ -34,7 +34,7 @@ if (sessionStorage.getItem( FireworkSession ) !== 'true') {
 	}
 
 	function loop() {
-		rect(0, 0, width, height, "rgba(10, 10, 10, 0.3)");
+		rect(0, 0, width, height, canvasBkgrd);
 
 		for (var i = 0; i < fireworks.length; i++) {
 			fireworks[i].update();

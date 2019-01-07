@@ -113,6 +113,19 @@
 			"type": "boolean",
 			"value": false
 		},
+		"canvasBkgrd": {
+			"label": "Canvas Background",
+			"info": "Background color for the fireworks",
+			"type": "color",
+			"whith_alpha": true,
+			"value": "rgba(10, 10, 10, 0.3)",
+			"dependencies": {
+				"evaluate": "all",
+				"conditions": [
+					{ "option": "advancedSettings", "equals": true }
+				]
+			}
+		},
 		"fadeOutTimer": {
 			"label": "Start Fadeout Timer",
 			"info": "Time before we start fading out the fireworks (in miliseconds)",

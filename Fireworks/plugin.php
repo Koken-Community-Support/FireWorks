@@ -19,6 +19,7 @@ class BaldursPhotographyFireworks extends KokenPlugin {
 	function renderMarkUp($data) {
 		$greatingOne	= $this->data->greatingOne;
 		$greatingTwo	= $this->data->greatingTwo;
+		$canvasBkgrd	= $this->data->canvasBkgrd;
 		$fadeOutTimer	= $this->data->fadeOutTimer;
 		$fadeTime		= $this->data->fadeTime;
 		$burstTime		= $this->data->burstTime;
@@ -48,7 +49,7 @@ class BaldursPhotographyFireworks extends KokenPlugin {
 				}
 			}
 			echo '</span><span id="year">'. $curYear .'</span></div>';
-			echo '<script id="fw_js_settings">var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script>';
+			echo '<script id="fw_js_settings">var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script>';
 		}
 	}
 

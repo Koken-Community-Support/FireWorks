@@ -3,7 +3,7 @@
 /**
  *
  */
-class BaldursPhotographyFireworks extends KokenPlugin {
+class KokenCommunityFireworks extends KokenPlugin {
 
 	function __construct() {
 		$this->require_setup = false;

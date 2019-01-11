@@ -9,6 +9,12 @@ var FireworkText = document.getElementById( textWrapp );
 if (sessionStorage.getItem( FireworkSession ) !== 'true') {
 	var gc = new GameCanvas();
 	var gc_id = document.getElementsByTagName("canvas")[0].setAttribute('id', canvasID );
+function theBroom() {
+	if( FwFooter !=null ) FwFooter.remove();
+	if( FireworkText !=null ) FireworkText.remove();
+	if( FireworkCanvas !=null ) FireworkCanvas.remove();
+	if ( debugCheck ) console.log('cleaning');
+};
 
 	var NewYear = new Date().getFullYear() + 1;
 	var year;
@@ -110,8 +116,7 @@ if (sessionStorage.getItem( FireworkSession ) !== 'true') {
 					FireworkCanvas.style.opacity -= 0.1;
 					FireworkText.style.opacity -= 0.1;
 					if (FireworkCanvas.style.opacity == 0) {
-						FireworkCanvas.remove();
-						FireworkText.remove();
+						theBroom();
 					}
 				} else {
 					clearInterval(fadeEffect);
@@ -123,5 +128,5 @@ if (sessionStorage.getItem( FireworkSession ) !== 'true') {
 	}, waitTime);
 } else {
 	console.log('KokenFireworks has already run');
-	FireworkText.remove();
+	theBroom();
 }

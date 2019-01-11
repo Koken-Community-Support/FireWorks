@@ -36,8 +36,8 @@ class KokenCommunityFireworks extends KokenPlugin {
 		$siteTitle		= Koken::$site['title'];
 
 		if (!$data['lightbox']) {
-			echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $greatingFont .'\';--fw-size-greating:'. $greatingSize .'vmin;--fw-size-year:'. $yearSize .'vmin;--fw-color-greating:'. $greatingColor .';--fw-color-year:'. $yearColor .'}</style>';
-			echo '<div id="fw_center" class="fw-text"><span id="greating">';
+			//echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $greatingFont .'\';--fw-size-greating:'. $greatingSize .'vmin;--fw-size-year:'. $yearSize .'vmin;--fw-color-greating:'. $greatingColor .';--fw-color-year:'. $yearColor .'}</style>';
+			echo '<div id="fw_center" class="fw-text"><style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $greatingFont .'\';--fw-size-greating:'. $greatingSize .'vmin;--fw-size-year:'. $yearSize .'vmin;--fw-color-greating:'. $greatingColor .';--fw-color-year:'. $yearColor .'}</style><span id="greating">';
 			if ($titlePlacement == 'first') {
 				echo '<h2>'. $siteTitle .' '. $greatingOne .'</h2>';
 				if ( !empty($greatingTwo) ) {
@@ -58,15 +58,16 @@ class KokenCommunityFireworks extends KokenPlugin {
 					echo '<h3>7'. $greatingTwo .'7</h3>';
 				}
 			}
-			echo '</span><span id="year">'. $curYear .'</span></div>';
+			//echo '</span><span id="year">'. $curYear .'</span></div>';
+			echo '</span><span id="year">'. $curYear .'</span>';
 			echo '<script id="fw_js_settings">var startValue="'.$startDate.'";var endValue="'.$endDate.'";var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script></div>';
 		}
 	}
 
 	function renderLast($data) {
 		if (!$data['lightbox']) {
-			echo '<script id="fw_gameCanvas" src="'. $this->get_path() .'/js/gameCanvas-3.0.min.js"></script>';
-			echo '<script id="fw_main_js" src="'. $this->get_path() .'/js/fireworks.min.js"></script>';
+			echo '<div id="fw_foot"><script id="fw_gameCanvas" src="'. $this->get_path() .'/js/gameCanvas-3.0.min.js"></script>';
+			echo '<script id="fw_main_js" src="'. $this->get_path() .'/js/fireworks.min.js"></script></div>';
 		}
 	}
 }

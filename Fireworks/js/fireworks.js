@@ -1,18 +1,17 @@
 /* minifyOnSave, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
-var canvasID = "fireworks";
 var textWrapp = "fw_center";
 var yearID = "year";
 var FireworkSession = "KokenFireWorksOnce";
 var FireworkText = document.getElementById( textWrapp );
+var canvasID	= "fireworks";
 var devHost		= 'oxygen.local';
 var deBugState	= 0;
 var demoState	= 1;
 var debugHash	= 'fireworksDebug';
 var demoHash	= 'fireworksDemo';
+var FireworkCanvas	= document.getElementById( canvasID );
 /* Only run once per session
    https://sharepoint.stackexchange.com/a/218571 */
-	var gc = new GameCanvas();
-	var gc_id = document.getElementsByTagName("canvas")[0].setAttribute('id', canvasID );
 var FireworksKey	= "KokenFireWorks";
 var FireworksValue	= NewYear + '.'+ location.hostname;
 
@@ -33,6 +32,8 @@ if ( debugCheck ) {
 	if ( demoCheck ) console.log('Koken Fireworks is in demo mode');
 }
 if ( demoCheck || dateCheck && sessionStorage.getItem( FireworksKey ) !== FireworksValue ) {
+	var gc = new GameCanvas( canvasID );
+
 	var year;
 	var yearCounter = 0;
 
@@ -122,7 +123,6 @@ if ( demoCheck || dateCheck && sessionStorage.getItem( FireworksKey ) !== Firewo
 	  https://stackoverflow.com/questions/29017379/how-to-make-fadeout-effect-with-pure-javascript*/
 	setTimeout(function() {
 		function fadeOutEffect() {
-			var FireworkCanvas = document.getElementById( canvasID );
 			var fadeEffect = setInterval(function () {
 				if (!FireworkCanvas.style.opacity) {
 					FireworkCanvas.style.opacity = 1;

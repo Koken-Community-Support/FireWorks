@@ -1,8 +1,4 @@
 /* minifyOnSave, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
-var textWrapp = "fw_center";
-var yearID = "year";
-var FireworkSession = "KokenFireWorksOnce";
-var FireworkText = document.getElementById( textWrapp );
 /*! Fireworks fireworks.js
  *  Copyright  (c) 2015-2017 Bjarne Varoystrand - bjarne ○ kokensupport • com
  *  License: GPL
@@ -13,12 +9,30 @@ var FireworkText = document.getElementById( textWrapp );
  *  http://varoystrand.se | http://kokensupport.com
 **/
 var canvasID	= "fireworks";
+var textWrapp	= "fw_center";
+var yearID		= "year";
+var footWrap	= "fw_foot";
+
 var devHost		= 'oxygen.local';
 var deBugState	= 0;
 var demoState	= 1;
 var debugHash	= 'fireworksDebug';
 var demoHash	= 'fireworksDemo';
+
+var currentTime	= new Date();
+var currentYear	= currentTime.getFullYear();
+var NewYear		= currentTime.getFullYear() + 1;
+var startDate	= new Date( startValue + '/' + currentYear ); // MM/DD/YYYY
+var endDate		= new Date( endValue + '/' + NewYear );
+
+var dateCheck	= currentTime > startDate && currentTime < endDate;
+var debugCheck	= deBugState == 1 || ( location.hostname == devHost || location.hash == '#'+debugHash );
+var demoCheck	= demoState == 1 && ( location.hash == '#'+demoHash );
+
+var FwFooter		= document.getElementById( footWrap );
+var FireworkText	= document.getElementById( textWrapp );
 var FireworkCanvas	= document.getElementById( canvasID );
+
 /* Only run once per session
    https://sharepoint.stackexchange.com/a/218571 */
 var FireworksKey	= "KokenFireWorks";
@@ -31,7 +45,6 @@ function theBroom() {
 	if ( debugCheck ) console.log('cleaning');
 };
 
-	var NewYear = new Date().getFullYear() + 1;
 if ( debugCheck ) {
 	if ( dateCheck ) {
 		console.log( currentTime + ' is in range ' + startDate + ' and ' + endDate );
@@ -40,6 +53,7 @@ if ( debugCheck ) {
 	}
 	if ( demoCheck ) console.log('Koken Fireworks is in demo mode');
 }
+
 if ( demoCheck || dateCheck && sessionStorage.getItem( FireworksKey ) !== FireworksValue ) {
 	var gc = new GameCanvas( canvasID );
 
@@ -149,9 +163,8 @@ if ( demoCheck || dateCheck && sessionStorage.getItem( FireworksKey ) !== Firewo
 			}, fadeTime);
 		};
 		fadeOutEffect();
-		sessionStorage.setItem(FireworkSession,'true');
+		sessionStorage.setItem( FireworksKey, FireworksValue );
 	}, waitTime);
 } else {
-	console.log('KokenFireworks has already run');
 	theBroom();
 }

@@ -17,6 +17,9 @@ class KokenCommunityFireworks extends KokenPlugin {
 	}
 
 	function renderMarkUp($data) {
+		//$currentDate	= date('d/m'); // Today
+		$startDate		= $this->data->runStart;
+		$endDate		= $this->data->runEnd;
 		$titlePlacement	= $this->data->titlePlacement;
 		$greatingOne	= $this->data->greatingOne;
 		$greatingTwo	= $this->data->greatingTwo;
@@ -56,7 +59,7 @@ class KokenCommunityFireworks extends KokenPlugin {
 				}
 			}
 			echo '</span><span id="year">'. $curYear .'</span></div>';
-			echo '<script id="fw_js_settings">var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script>';
+			echo '<script id="fw_js_settings">var startValue="'.$startDate.'";var endValue="'.$endDate.'";var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script></div>';
 		}
 	}
 

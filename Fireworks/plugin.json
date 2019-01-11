@@ -3,7 +3,7 @@
 	"description": "A simple holidays fireworks and greating",
 	"description_long": "A simple holidays fireworks and greating",
 	"documentation": "http://varoystrand.se/sidor/fireworks-for-koken/",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"demo": "http://varoystrand.se/sidor/fireworks-for-koken/",
 	"author": {
 		"name": "Bjarne Varoystrand",
@@ -13,6 +13,26 @@
 	"koken_version_required": "0.20.4",
 
 	"data": {
+		"runStart": {
+			"label": "Start date",
+			"type": "string",
+			"value": "12/20",
+			"placeholder": "12/20",
+			"validation": {
+				"type": "not_empty",
+				"error_message": "You need to have a START date (MM/DD)"
+			}
+		},
+		"runEnd": {
+			"label": "End date",
+			"type": "string",
+			"value": "01/01",
+			"placeholder": "01/01",
+			"validation": {
+				"type": "not_empty",
+				"error_message": "You need to have a END date (MM/DD)"
+			}
+		},
 		"titlePlacement": {
 			"label": "Site title",
 			"type": "select",

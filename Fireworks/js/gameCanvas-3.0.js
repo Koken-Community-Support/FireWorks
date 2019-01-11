@@ -1,4 +1,5 @@
 /* minifyOnSave, checkOutputFileAlreadyExists: false, checkAlreadyMinifiedFile: false, filenamePattern: $1.min.$2 */
+// NOTE Input / events is commented out
 /*! GameCanvas gc.js
  *	@copyright	(c) 2018 Alfons Nilsson - https://aaserver.net
  *	@license MIT
@@ -514,8 +515,8 @@ function GameCanvas(canvas, width, height, settings) {
 	|		 Input / events	   |
 	+------------------------------+
 	*/
-
-
+	// NOTE DEACTIVATED since fireworks dont use it
+	/*
 	this.topFunction.mouse = {x: 0, y: 0, left: false, middle: false, right: false};
 	this.topFunction.mouseX = 0;
 	this.topFunction.mouseY = 0;
@@ -578,4 +579,5 @@ function GameCanvas(canvas, width, height, settings) {
 		_this.keyName[e.key] = false;
 		typeof OnKeyUp === "function" && OnkeyUp();
 	});
+	*/
 }

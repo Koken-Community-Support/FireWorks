@@ -61,6 +61,7 @@ class KokenCommunityFireworks extends KokenPlugin {
 			//echo '</span><span id="year">'. $curYear .'</span></div>';
 			echo '</span><span id="year">'. $curYear .'</span>';
 			echo '<script id="fw_js_settings">var startValue="'.$startDate.'";var endValue="'.$endDate.'";var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script></div>';
+			echo '<canvas id="fireworks"></canvas>';
 		}
 	}
 

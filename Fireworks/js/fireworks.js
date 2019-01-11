@@ -6,12 +6,16 @@ var FireworkSession = "KokenFireWorksOnce";
 var FireworkText = document.getElementById( textWrapp );
 var devHost		= 'oxygen.local';
 var deBugState	= 0;
+var demoState	= 1;
 var debugHash	= 'fireworksDebug';
+var demoHash	= 'fireworksDemo';
 /* Only run once per session
    https://sharepoint.stackexchange.com/a/218571 */
-if (sessionStorage.getItem( FireworkSession ) !== 'true') {
 	var gc = new GameCanvas();
 	var gc_id = document.getElementsByTagName("canvas")[0].setAttribute('id', canvasID );
+var FireworksKey	= "KokenFireWorks";
+var FireworksValue	= NewYear + '.'+ location.hostname;
+
 function theBroom() {
 	if( FwFooter !=null ) FwFooter.remove();
 	if( FireworkText !=null ) FireworkText.remove();
@@ -26,7 +30,9 @@ if ( debugCheck ) {
 	} else {
 		console.log( currentTime + ' is not between ' + startDate + ' and ' + endDate );
 	}
+	if ( demoCheck ) console.log('Koken Fireworks is in demo mode');
 }
+if ( demoCheck || dateCheck && sessionStorage.getItem( FireworksKey ) !== FireworksValue ) {
 	var year;
 	var yearCounter = 0;
 

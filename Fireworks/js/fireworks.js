@@ -4,6 +4,9 @@ var textWrapp = "fw_center";
 var yearID = "year";
 var FireworkSession = "KokenFireWorksOnce";
 var FireworkText = document.getElementById( textWrapp );
+var devHost		= 'oxygen.local';
+var deBugState	= 0;
+var debugHash	= 'fireworksDebug';
 /* Only run once per session
    https://sharepoint.stackexchange.com/a/218571 */
 if (sessionStorage.getItem( FireworkSession ) !== 'true') {
@@ -17,6 +20,13 @@ function theBroom() {
 };
 
 	var NewYear = new Date().getFullYear() + 1;
+if ( debugCheck ) {
+	if ( dateCheck ) {
+		console.log( currentTime + ' is in range ' + startDate + ' and ' + endDate );
+	} else {
+		console.log( currentTime + ' is not between ' + startDate + ' and ' + endDate );
+	}
+}
 	var year;
 	var yearCounter = 0;
 

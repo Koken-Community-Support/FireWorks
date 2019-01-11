@@ -1,8 +1,4 @@
 <?php
-
-/**
- *
- */
 class KokenCommunityFireworks extends KokenPlugin {
 
 	function __construct() {
@@ -17,9 +13,11 @@ class KokenCommunityFireworks extends KokenPlugin {
 	}
 
 	function renderMarkUp($data) {
+		$curYear		= date('Y');
 		//$currentDate	= date('d/m'); // Today
 		$startDate		= $this->data->runStart;
 		$endDate		= $this->data->runEnd;
+		$siteTitle		= Koken::$site['title'];
 		$titlePlacement	= $this->data->titlePlacement;
 		$greatingOne	= $this->data->greatingOne;
 		$greatingTwo	= $this->data->greatingTwo;
@@ -32,8 +30,6 @@ class KokenCommunityFireworks extends KokenPlugin {
 		$fadeOutTimer	= $this->data->fadeOutTimer;
 		$fadeTime		= $this->data->fadeTime;
 		$burstTime		= $this->data->burstTime;
-		$curYear		= date('Y');
-		$siteTitle		= Koken::$site['title'];
 
 		if (!$data['lightbox']) {
 			//echo '<style id="fw_css_settings" type="text/css">:root {--fw-font-greating:\''. $greatingFont .'\';--fw-size-greating:'. $greatingSize .'vmin;--fw-size-year:'. $yearSize .'vmin;--fw-color-greating:'. $greatingColor .';--fw-color-year:'. $yearColor .'}</style>';

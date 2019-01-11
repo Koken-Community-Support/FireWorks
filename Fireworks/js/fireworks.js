@@ -3,6 +3,15 @@ var textWrapp = "fw_center";
 var yearID = "year";
 var FireworkSession = "KokenFireWorksOnce";
 var FireworkText = document.getElementById( textWrapp );
+/*! Fireworks fireworks.js
+ *  Copyright  (c) 2015-2017 Bjarne Varoystrand - bjarne ○ kokensupport • com
+ *  License: GPL
+ *  @author Alfons Nilsson (https://aaserver.net)
+ *  @author Bjarne Varoystrand (@black_skorpio)
+ *  @version 1.1.0
+ *  @description Fireworks for Koken, based on the original work of Alfins Nilsson
+ *  http://varoystrand.se | http://kokensupport.com
+**/
 var canvasID	= "fireworks";
 var devHost		= 'oxygen.local';
 var deBugState	= 0;

@@ -1,6 +1,11 @@
 # Fireworks for Koken
 Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koken.me) that comes with decorative Christmas and New Year's Eve typeface.
+
 ![Fireworks preview](Fireworks/preview.jpg)
+
+## Demo & Documentation
+* [Fireworks Demo](https://varoystrand.se/sidor/fireworks_for_koken/#fireworksDemo)
+* [Documentation](https://varoystrand.se/sidor/fireworks_for_koken/)
 
 ## Features
 * Colorful holidays firekworks
@@ -9,6 +14,7 @@ Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koke
 * Fluid and responsive font sizes
 * Only displayed once per visit/browser session
 * Automaticly updates the year
+* Automaticly runs between predefined dates
 
 ## Installation
 
@@ -21,10 +27,6 @@ Fireworks is a simple javascript and CSS plugin for the [koken cms](https://koke
 ### Merry Christmas Fontface Character Map
 ![Merry Christmas](screens/merry-christmas.png)
 ![Character Map](screens/character-map-merry-christmas.png)
-
-### TODO
-* Add check so it only will run between MMDD -> MMDD
-I.e it will only run between Dec 11 -> Jan 1
 
 ### Credits
 

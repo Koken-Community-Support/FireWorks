@@ -21,7 +21,11 @@ var demoHash	= 'fireworksDemo';
 
 var currentTime	= new Date();
 var currentYear	= currentTime.getFullYear();
-var NewYear		= currentTime.getFullYear() + 1;
+if ( spanYear == 1 ) {
+	var NewYear		= currentTime.getFullYear() + 1;
+} else {
+	var NewYear		= currentTime.getFullYear();
+}
 var startDate	= new Date( startValue + '/' + currentYear ); // MM/DD/YYYY
 var endDate		= new Date( endValue + '/' + NewYear );
 

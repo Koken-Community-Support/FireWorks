@@ -15,6 +15,7 @@ class KokenCommunityFireworks extends KokenPlugin {
 	function renderMarkUp($data) {
 		$curYear		= date('Y');
 		//$currentDate	= date('d/m'); // Today
+		$spanYear		= $this->data->spanYear;
 		$startDate		= $this->data->runStart;
 		$endDate		= $this->data->runEnd;
 		$siteTitle		= Koken::$site['title'];
@@ -56,7 +57,7 @@ class KokenCommunityFireworks extends KokenPlugin {
 			}
 			//echo '</span><span id="year">'. $curYear .'</span></div>';
 			echo '</span><span id="year">'. $curYear .'</span>';
-			echo '<script id="fw_js_settings">var startValue="'.$startDate.'";var endValue="'.$endDate.'";var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script></div>';
+			echo '<script id="fw_js_settings">var spanYear="'.$spanYear.'";var startValue="'.$startDate.'";var endValue="'.$endDate.'";var canvasBkgrd="'. $canvasBkgrd .'";var waitTime='. $fadeOutTimer .';var fadeTime='. $fadeTime .';var fireworksTime='. $burstTime .';</script></div>';
 			echo '<canvas id="fireworks"></canvas>';
 		}
 	}

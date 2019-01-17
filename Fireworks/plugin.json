@@ -33,6 +33,18 @@
 				"error_message": "You need to have a END date (MM/DD)"
 			}
 		},
+		"spanYear": {
+			"label": "End date is next Year",
+			"info": "Is the end date spanning over to next year?",
+			"type": "boolean",
+			"value": true,
+			"dependencies": {
+				"evaluate": "all",
+				"conditions": [
+					{ "option": "advancedSettings", "equals": true }
+				]
+			}
+		},
 		"titlePlacement": {
 			"label": "Site title",
 			"type": "select",
